@@ -102,3 +102,9 @@ footer {
     font-weight: 700;
 
 }
+button {
+	margin-top: 20px;
+}
+#score {
+margin-top: 20px;
+}
