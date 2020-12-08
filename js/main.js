@@ -61,7 +61,7 @@ function createBoard() {
 
     }
 }
-
+//resets cards
 function reset() {
    for (let i = 0; i < cards.length; i++){
     let parent = document.getElementById('game-board');
@@ -82,6 +82,13 @@ let score = document.getElementById("score");
 let actual = document.createTextNode("Score: " + points);
 
 score.appendChild(actual);
+}
+
+//reset points
+function resetPoints() {
+    points = 0;
+    let score = document.getElementById("score").firstChild;
+    score.nodeValue = "Score: " + points;
 }
 
 
